@@ -8,7 +8,8 @@ services:
       - db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_PASSWORD=postgres
-
+    ports:
+      - "5656:5432"
   plausible_events_db:
     image: clickhouse/clickhouse-server:24.3.3.102-alpine
     restart: always
