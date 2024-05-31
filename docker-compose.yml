@@ -32,8 +32,6 @@ services:
       - plausible_events_db
     ports:
       - 0.0.0.0:8888:8000
-    env_file:
-      - plausible-conf.env 
 
 volumes:
   db-data:
